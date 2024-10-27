@@ -1,0 +1,92 @@
+/* CSS Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-image: url('https://asset.gecdesigns.com/img/wallpapers/beautiful-fantasy-wallpaper-ultra-hd-wallpaper-4k-sr10012418-1706506236698-cover.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    line-height: 1.5;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(50, 33, 199, 0.322);
+    border-radius: 2rem;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    height: 50svh;
+    margin-top: 25svh;
+    margin-inline:5svw;
+}
+
+#Count {
+    display: block;
+    text-align: center;
+    font-size: 5rem;
+    font-family: Helvetica, sans-serif;
+    color: aqua;
+}
+
+.button {
+    width: 20vw;
+    padding: 2svw;
+    font-size: clamp(1rem, 1svw, 2rem);
+    font-family: Helvetica, sans-serif;
+    font-weight: bolder;
+    border-radius: 2rem;
+    border-style: outset;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+#decreaseBtn {
+    background-color: red;
+}
+
+#restBtn {
+    background-color: rgb(47, 137, 255);
+}
+
+#increaseBtn {
+    background-color: green;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#Btn_Sec {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+@media (min-width: 1280px) {
+    .container {
+        margin-inline: 10svw;
+    }
+
+    .button {
+        padding: 2.5svh 0.5svw;
+    }
+}
+
+@media (max-width: 768px) {
+    #Count {
+        font-size: clamp(4rem, 2svw, 5rem);
+    }
+}
